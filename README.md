@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# ArtistLink
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ArtistLink is a music discovery game inspired by the Wikipedia speedrun game.
 
-Currently, two official plugins are available:
+The goal is to navigate from one artist to another using only music collaborations, features, and album appearances.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+For example:
 
-## React Compiler
+Kendrick Lamar  
+→ "All The Stars"  
+→ SZA  
+→ "Rich Baby Daddy"  
+→ Drake
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app focuses on music discovery and graph-style navigation through artist connections.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Navigate between artists through real collaborations
+- Track number of moves taken
+- Randomized start and target artists
+- Album and track-based connection system
+- Responsive React frontend
+- Interactive music discovery gameplay
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Built With
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React
+- TypeScript
+- Vite
+- CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## How It Works
+
+Each artist acts as a node in a graph.
+
+Connections between artists are stored as:
+- featured tracks
+- album appearances
+- collaborations
+
+The player traverses the graph by selecting connected artists.
+
+## Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/artistlink.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+## Future Improvements
+
+- Spotify API integration
+- Producer/writer connection mode
+- Artist graph visualization
+
+## Screenshots
+
+Coming soon.
