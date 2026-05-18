@@ -1,0 +1,73 @@
+{
+  "Kendrick Lamar": {
+    "connections": [
+      { "artist": "SZA", "track": "All The Stars" },
+      { "artist": "Future", "track": "Like That" },
+      { "artist": "Baby Keem", "track": "Family Ties" },
+      { "artist": "Taylor Swift", "track": "Bad Blood Remix" }
+    ]
+  },
+  "SZA": {
+    "connections": [
+      { "artist": "Kendrick Lamar", "track": "All The Stars" },
+      { "artist": "Drake", "track": "Rich Baby Daddy" },
+      { "artist": "Doja Cat", "track": "Kiss Me More" },
+      { "artist": "Travis Scott", "track": "Open Arms" }
+    ]
+  },
+  "Drake": {
+    "connections": [
+      { "artist": "21 Savage", "track": "Jimmy Cooks" },
+      { "artist": "Future", "track": "Life Is Good" },
+      { "artist": "Travis Scott", "track": "SICKO MODE" },
+      { "artist": "Rihanna", "track": "Work" }
+    ]
+  },
+  "Travis Scott": {
+    "connections": [
+      { "artist": "Drake", "track": "SICKO MODE" },
+      { "artist": "The Weeknd", "track": "K-POP" },
+      { "artist": "Playboi Carti", "track": "FE!N" },
+      { "artist": "Future", "track": "Telekinesis" }
+    ]
+  },
+  "Future": {
+    "connections": [
+      { "artist": "Drake", "track": "Life Is Good" },
+      { "artist": "Kendrick Lamar", "track": "Like That" },
+      { "artist": "Metro Boomin", "track": "Superhero" },
+      { "artist": "The Weeknd", "track": "Low Life" }
+    ]
+  },
+  "The Weeknd": {
+    "connections": [
+      { "artist": "Daft Punk", "track": "Starboy" },
+      { "artist": "Ariana Grande", "track": "Save Your Tears Remix" },
+      { "artist": "Future", "track": "Low Life" },
+      { "artist": "Travis Scott", "track": "K-POP" }
+    ]
+  },
+  "Taylor Swift": {
+    "connections": [
+      { "artist": "Kendrick Lamar", "track": "Bad Blood Remix" },
+      { "artist": "Ed Sheeran", "track": "Everything Has Changed" },
+      { "artist": "Ice Spice", "track": "Karma Remix" },
+      { "artist": "Bon Iver", "track": "Exile" }
+    ]
+  },
+  "Daft Punk": {
+    "connections": [
+      { "artist": "The Weeknd", "track": "Starboy" },
+      { "artist": "Pharrell Williams", "track": "Get Lucky" },
+      { "artist": "Kanye West", "track": "Stronger" }
+    ]
+  },
+  "Kanye West": {
+    "connections": [
+      { "artist": "Jay-Z", "track": "Otis" },
+      { "artist": "Kid Cudi", "track": "Father Stretch My Hands" },
+      { "artist": "Daft Punk", "track": "Stronger" },
+      { "artist": "The Weeknd", "track": "Hurricane" }
+    ]
+  }
+}
